@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ProfileDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Profile">
+    <Key>
+      <PropertyRef Name="User" />
+    </Key>
+    <Property Name="User" Type="varchar" MaxLength="255" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Bio" Type="varchar(max)" />
+    <Property Name="FavoriteTitle1" Type="varchar" MaxLength="50" />
+    <Property Name="FavoriteContent1" Type="varchar" MaxLength="50" />
+    <Property Name="FavoriteTitle2" Type="varchar" MaxLength="50" />
+    <Property Name="FavoriteContent2" Type="varchar" MaxLength="50" />
+    <Property Name="FavoriteTitle3" Type="varchar" MaxLength="50" />
+    <Property Name="FavoriteContent3" Type="varchar" MaxLength="50" />
+    <Property Name="ImageLink" Type="varchar" MaxLength="255" />
+  </EntityType>
+  <EntityContainer Name="ProfileDBModelStoreContainer">
+    <EntitySet Name="Profile" EntityType="Self.Profile" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ProfileDBModelStoreContainer" CdmEntityContainer="ProfileDBContextNew">
+    <EntitySetMapping Name="Profiles">
+      <EntityTypeMapping TypeName="ProfileDBModel.Profile">
+        <MappingFragment StoreEntitySet="Profile">
+          <ScalarProperty Name="User" ColumnName="User" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Bio" ColumnName="Bio" />
+          <ScalarProperty Name="FavoriteTitle1" ColumnName="FavoriteTitle1" />
+          <ScalarProperty Name="FavoriteContent1" ColumnName="FavoriteContent1" />
+          <ScalarProperty Name="FavoriteTitle2" ColumnName="FavoriteTitle2" />
+          <ScalarProperty Name="FavoriteContent2" ColumnName="FavoriteContent2" />
+          <ScalarProperty Name="FavoriteTitle3" ColumnName="FavoriteTitle3" />
+          <ScalarProperty Name="FavoriteContent3" ColumnName="FavoriteContent3" />
+          <ScalarProperty Name="ImageLink" ColumnName="ImageLink" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

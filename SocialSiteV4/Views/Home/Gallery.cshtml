@@ -1,0 +1,16 @@
+﻿@model IEnumerable<string>
+
+@{
+    ViewBag.Title = "Gallery";
+}
+
+<div id="galleryTitle">
+    <p>Cecil Harvey's Gallery</p>
+</div>
+
+<ul id="images">
+    @foreach(string s in Model)
+    {
+        <li><img src="@Url.Content(@s)" /></li>
+    }
+</ul>

@@ -1,0 +1,34 @@
+﻿@model SocialSiteV4.Models.Profile
+
+@{
+    ViewBag.Title = "Edit Profile";
+}
+
+@using (Html.BeginForm())
+{ 
+    <div id="profileImage">
+        <p><strong>Image Link :</strong> @Html.TextBoxFor(x => x.ImageLink)</p>
+    </div>
+
+    <div id="name">
+        <p><strong>Display Name :</strong> @Html.TextBoxFor(x => x.Name)</p>
+    </div>
+
+    <div id="bioTitle">BIO</div>
+    <div id="bio">
+        <section>
+            @Html.TextAreaFor(x => x.Bio)
+        </section>
+    </div>
+
+    <div id="fovoriteTitle">FAVORITES</div>
+    <div id="favorites">
+        <section>
+            <p><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Favorite Title &emsp;&nbsp;:</strong> &emsp;&emsp;&nbsp;&nbsp;Favorites</p>
+            <p><strong>@Html.TextBoxFor(x => x.FavoriteTitle1) :</strong> @Html.TextBoxFor(x => x.FavoriteContent1)</p>
+            <p><strong>@Html.TextBoxFor(x => x.FavoriteTitle2) :</strong> @Html.TextBoxFor(x => x.FavoriteContent2)</p>
+            <p><strong>@Html.TextBoxFor(x => x.FavoriteTitle3) :</strong> @Html.TextBoxFor(x => x.FavoriteContent3)</p>
+       </section>
+    </div>
+    <input type="submit" value="Save" />
+}

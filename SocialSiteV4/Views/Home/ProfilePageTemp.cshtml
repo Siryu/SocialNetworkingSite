@@ -1,0 +1,30 @@
+﻿@model SocialSiteV4.Models.Profile
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<div id="profileImage">
+    <img src="@Model.ImageLink" />
+    @Html.ActionLink("Gallery", "Gallery")
+</div>
+
+<div id="name">
+    <p>@Model.Name</p>
+</div>
+
+<div id="bioTitle">BIO</div>
+<div id="bio">
+    <section>
+        @Model.Bio
+    </section>
+</div>
+
+<div id="fovoriteTitle">FAVORITES</div>
+<div id="favorites">
+    <section>
+        <p><strong>@Model.FavoriteTitle1:</strong> @Model.FavoriteContent1</p>
+        <p><strong>@Model.FavoriteTitle2:</strong> @Model.FavoriteContent2</p>
+        <p><strong>@Model.FavoriteTitle3:</strong> @Model.FavoriteContent3</p>
+    </section>
+</div>

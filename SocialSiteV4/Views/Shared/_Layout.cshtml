@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Adventurers Guild</title>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div id="container">
+        <header><img src="~/Images/FFXI_Logo_no_title.jpg" /></header>
+        @Html.Partial("_NavPartial")
+        @RenderBody()
+    </div>
+    <footer>
+        <p>Web Site by Corey Massey</p>
+    </footer> 
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
